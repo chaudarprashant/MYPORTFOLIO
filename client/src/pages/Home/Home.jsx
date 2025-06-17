@@ -5,6 +5,7 @@ import Resume from '../../assets/docs/ResumeF.pdf'
 import Typewriter from 'typewriter-effect';
 import { FaMoon } from "react-icons/fa6";
 import { FaSun } from "react-icons/fa";
+
 const Home = () => {
    const [theme,setTheme] = useTheme()
 
@@ -29,7 +30,7 @@ const Home = () => {
  />
  </h1>
  <div className='home-buttons'>
-  <button className='btn btn-hire'>Hire me</button>
+  <a className='btn btn-hire' href="http://api.whatsapp.com/send?phone=7057242892" rel='noreferrer' target='_blank'>Hire me</a>
   <a className = 'btn btn-cv' href={Resume} download="ResumeF.pdf">My Resume</a>
 
  </div>

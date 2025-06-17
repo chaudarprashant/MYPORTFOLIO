@@ -8,7 +8,7 @@ import { MdCastForEducation } from "react-icons/md";
 import { BsProjector } from "react-icons/bs";
 import { Link } from 'react-scroll';
 import Zoom from 'react-reveal/Zoom';
-
+import Fade from 'react-reveal/Zoom';
 import { IoIosContact } from "react-icons/io";
 
 const Menus = ({toggle}) => {
@@ -21,9 +21,9 @@ const Menus = ({toggle}) => {
             <img src="passportSizepic.jpg" alt="profile pic" />
         </div>
         </Zoom>
+        <Fade left duration={2500}>
         <div className='nav-items'>
             <div className='nav-item'>
-
                 <div className='nav-link'>
                   <Link to='home'
                          spy={true}
@@ -106,6 +106,7 @@ Projects
 
             </div>
     </div>
+    </Fade>
     </>) : (<h1>
 
         <div className='nav-item'>

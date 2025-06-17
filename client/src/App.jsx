@@ -14,7 +14,7 @@ function App() {
   return (
     <>
     <div id={theme}>
-      {/*<MobileNav/>*/}
+      <MobileNav/>
       <Layout/>
      <div className="container">
      <About/>

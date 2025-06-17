@@ -1,26 +1,24 @@
-.project{
-   
-    margin: 50px;
-    margin-left: 130px;
+.project {
+  margin: 50px;
+  margin-left: 130px;
 }
 
-.project hr{
-    color: #138781;
-    width: 400px;
-    margin: 10px auto;
-
+.project hr {
+  color: #138781;
+  width: 400px;
+  margin: 10px auto;
 }
 
-.project h2{
-    font-weight: bold;
-    color: #138781; 
+.project h2 {
+  font-weight: bold;
+  color: #138781;
 }
 
-#ads{
-    margin: 30px 0px 30px 0px;
+#ads {
+  margin: 30px 0;
 }
 
-#ads .card-notify-badge{
+#ads .card-notify-badge {
     background-color: coral;
     position: absolute;
     left: -10px;
@@ -35,60 +33,99 @@
 
 }
 
+.card {
+  position: relative;
+  /* overflow: hidden; */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  border: 1px solid #138781;
+}
+
 .card img {
-    height: 150px;
-    width: 100%;
+  height: 180px;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
 }
 
-.card-detail-badge{
-    background-color: #138781;
-    text-align: center;
-    border-radius: 30px 30px 30px 30px;
-    color: black;
-    padding: 5px 10px;
-    font-size: 14px;
+.card-detail-badge {
+  background-color: #138781;
+  border-radius: 30px;
+  color: white;
+  padding: 5px 10px;
+  font-size: 13px;
+  margin: 3px;
+  transition: background-color 0.3s ease;
 }
 
-.card-image-overly{
-    font-size: 20px;
-}
-.card-image-overly span{
-    display: inline-block;
-    margin-left: 5px;
-    
+.card-detail-badge:hover {
+  background-color: #0f5e57;
 }
 
-.card:hover{
-    background-color: white;
-    border-radius: 4px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    transition: all 1s ease;
+.card-image-overly {
+  font-size: 16px;
+  padding-top: 10px;
 }
 
-.ad-btn{
-    text-transform: uppercase;
-    width: 150px;
-    height: 40px;
-    display: block;
-    text-align: center;
-    background-color: #138781;
-    color: white;
-    border-radius: 80px;
-    font-size: 16px;
-    line-height: 35px;
-    text-decoration: none;
-    margin: 20px auto 20px auto;
-    overflow: hidden;
-    position: relative;
-
+.card-body {
+  padding: 15px;
 }
 
-.ad-btn:hover{
-    background-color: white;
-    color: aqua;
-    background: transparent;
-    border: 2px solid #138781;
-    transition: all 0.3s ease;
-    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+.ad-title h5 {
+  font-weight: bold;
+  color: #333;
+}
 
+.ad-btn {
+  text-transform: uppercase;
+  width: 160px;
+  display: inline-block;
+  text-align: center;
+  background-color: #3ed3cb;
+  color: white;
+  border-radius: 50px;
+  font-size: 14px;
+  padding: 8px 0;
+  margin: 10px 8px 0;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+}
+
+.ad-btn:hover {
+  background: transparent;
+  border: 2px solid #138781;
+  color: #138781;
+  box-shadow: 0 0 10px rgba(19, 135, 129, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .project {
+    margin: 0;
+    padding: 0;
+    margin-top: 50px;
+  }
+
+  .project hr {
+    width: 280px;
+  }
+
+  .project .card {
+    margin-top: 30px;
+  }
+
+  .ad-btn {
+    width: 140px;
+    font-size: 13px;
+  }
+
+  .card img {
+    height: 160px;
+  }
 }

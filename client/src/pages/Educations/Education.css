@@ -3,7 +3,7 @@
     margin: 50px;
     margin-left: 140px;
    
-    background-color: rgb(207, 207, 207);
+    background-color: rgb(162, 150, 150);
 }
 
 .education hr{
@@ -25,4 +25,21 @@
 
 .education .vertical-timeline-element-subtitle{
     color: #1e1e2c;
+}
+
+/* mobile view */
+/* ================== */
+@media (max-width: 600px) {
+    .education{
+        margin: 0;
+        padding: 0;
+        margin-top: 30px;
+    }
+    .education h2{
+        padding-top: 20px;
+    }
+    .education hr{
+        width: 280px;
+        margin-bottom: 10px;
+    }
 }

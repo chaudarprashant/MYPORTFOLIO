@@ -1,81 +1,76 @@
-
-.contact{
-    margin-left: 130px;
-    margin-top: 60px;
-    padding-top: 50px;
+.contact-wrapper {
+  max-width: 1100px;
+    margin-left: 150px;
 }
 
-.card0{
-    box-shadow: 0px 4px 8px 0px #757575;
-    border-radius: 0px;
+.contact-container {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
-.card2{
-    margin: 0px 40px;
-}
-.card1 .image{
-  
-    height: 100%;
-    width: 100%;
-}
-.border-line{
-    border-radius: 1px  solid #e0e0e0;
-}
-.line{
-    height: 1px;
-    width: 45%;
-    background-color: #e0e0e0;
-    margin-top: 10px;
-
-}
-.or{
-    display: flex;
-    width: 10%;
-    font-weight: bold;
+.contact-container h2 {
+  font-weight: bold;
+  color: #333;
 }
 
-::placeholder{
-    color: #bdbdbd;
-    opacity: 1;
-    font-weight: 300;
-
+.form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
 }
 
-input,textarea{
-    padding: 10px 12px;
-    border: 1px solid lightgray;
-    border-radius: 2px;
-    margin-top: 5px;
-    margin-top: 2px;
-    width: 100%;
-    color: #138781;
-    font-size: 1rem;
-    letter-spacing: 1px;
+button.btn-primary {
+  background-color: #007bff;
+  border: none;
 }
 
-input:focus,
-textarea:focus{
-    box-shadow: none;
-    outline: 1px solid #138781 ;
-    outline-width: 0px;
+button.btn-primary:hover {
+  background-color: #0056b3;
 }
 
-button:focus{
-    box-shadow: none;
-    outline-width: 0px;
-
+/* Image Styling */
+.contact-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
-.button{
-    background-color: #1e1e1e;
-    color: white;
-    border-radius: 2px;
-    margin-top: 15px;
-    padding: 10px;
+/* Social Media Icons */
+.icon-link {
+  color: #333;
+  font-size: 1.4rem;
+  margin-left: 8px;
+  transition: color 0.3s ease;
 }
 
+.icon-link:hover {
+  color: #007bff;
+}
 
-.button:hover{
-    background-color: #000;
-    color: white;
+/* ======================= */
+/* Mobile View */
+@media (max-width: 600px) {
+  .contact {
+    margin: 0;
+    padding: 0;
+    margin-top: 50px;
+  }
+
+  .contact-wrapper {
+    padding: 0 15px;
+  }
+
+  .contact-container {
+    padding: 20px;
+  }
+
+  .contact-container h2 {
+    font-size: 1.5rem;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .icon-link {
+    margin-left: 0;
+  }
 }
