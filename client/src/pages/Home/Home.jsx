@@ -23,7 +23,7 @@ const Home = () => {
           <h2>Hi 🙌 I`am</h2>
           <h1>
           <Typewriter options ={ {
-  strings: ['Full stack developer !', 'MERN stack develper !','REACT JS  developer !'],
+  strings: ['Full stack developer !', 'MERN stack develper !','REACT JS  developer !','200+ LeetCode Quation!'],
   autoStart: true,
   loop:true,
 }}
